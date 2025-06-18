@@ -79,7 +79,7 @@ span:hover {
 } */
 .secthree {
   height:60vh;
-  background-image: url("./flow.png");
+  background-image: url("/flow.png");
   width: 100%;
   background-size: cover;
   background-position: center;
