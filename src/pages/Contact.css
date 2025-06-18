@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+.contact_word {
+  position: relative;
+  height: 15vw;
+  width: 100%;
+  border: 1px solid black;
+  display:flex;
+}
+#near_nav {
+  height:15vw;
+  align-self: flex-end;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: absolute;
+  bottom: 0px; */
+  color: #0f6744;
+  /* left:1vh; */
+  font-size: 9vw;
+  font-family: "Space Grotesk", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 700;
+  font-style: normal;
+}
+#pretend_nav {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  font-size: 2vh;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+#pretend_email {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  font-size: 2vh;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.form_submit {
+  width: 100%;
+}
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cool {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  height:9dvh;
+  width:40vh;
+  margin: .5vh 1vh .5vh 1vh;
+  border: 2px solid #0f6744;
+  border-radius: 1rem;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  color: #0f6744;
+  font-size: 1rem;
+}
+h4 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 1vh;
+  color: #0f6744;
+  padding-left: 2vh;
+  font-size:2vh
+}
+.input_btn {
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+}
+.thrilled {
+  height: 20vh;
+  display: flex;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  color: #0f6744;
+}
+p {
+  padding-left: 20vw;
+  font-size: 6vh;
+}
+#mess_input{
+  height:40vh;
+  width:70vw;
+}
+@media (max-width :910px){
+#pretend_nav{
+  display:none;
+}
+.cool{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+p{
+  padding-left:1vh;
+  font-size: 4vh;
+}
+.input_btn{
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 2vh;
+}
+}

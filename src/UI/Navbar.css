@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+.navbar {
+  display: flex;
+  height: 6vmax;
+  width: 100vw;
+  background-color: #f0f0e6;
+  border: 1px solid black;
+}
+.logo {
+  height:100%;
+  width:6rem;
+  background-image: url("./logo.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+}
+.brand {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height:100%;
+  width: 9rem;
+  background-color: #0f6744;
+  color: #fff7ad;
+  font-size: 2rem;
+  border: 1px solid black;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.navEss {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1.8fr;
+  grid-template-columns: repeat(6, 1fr);
+}
+.support0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  font-size: 1.8vh;
+  grid-column: 1/5;
+  border: 1px solid black;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.support0:hover {
+  background-color: #0f6744;
+  color: #f0f0e6;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+   font-size: 1.8vh;
+  text-transform: uppercase;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+   font-size: 1.8vh;
+  text-transform: uppercase;
+}
+.navlinks {
+  display: flex;
+  text-decoration: none;
+  padding-left: 3vw;
+  border: 1px solid black;
+  grid-column: -7/-2;
+}
+.route_link {
+  align-self: center;
+  text-decoration: none;
+
+  font-size: 1vw;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #0f6744;
+}
+
+/* .services_link:hover{
+  color: #F0F0E6;
+}
+.contact_link:hover{
+color: #F0F0E6;
+}
+.home_link:hover{
+color: #F0F0E6;
+}
+.about_link:hover{
+color: #F0F0E6;
+} */
+ .nolinks,.links{
+  align-self: center;
+ }
+span {
+  display: flex;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-self: center;
+  height: 1.5rem;
+}
+.navlinks span:hover {
+  scale: 1.5rem;
+  border: 1px solid black;
+  background-color: #fff7ad;
+}
+.navlinks span:hover a {
+  scale: 1.5rem;
+}
+.navlinks span,
+.navlinks span a {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+.message:hover {
+  background-color: #0f6744;
+  color: #f0f0e6;
+}
+.nav_context,.ham,.support1{
+  display:none;
+}
+@media (max-width :910px){
+  .navbar {
+  display: flex;
+  height: 8vmax;
+  width: 100vw;
+  background-color: #f0f0e6;
+  border: 1px solid black;
+}
+ .nav-span{
+  display: flex;
+justify-self: center;
+height:6vh;
+  width: 100%;
+  background-color: #f0f0e6;
+  border: 1px solid black;
+  }
+  /* .navlinks{
+   display:flex;
+   flex-direction: column;
+
+  } */
+   .links{
+    width: 100%;
+    display:flex;
+    flex-direction:column ;
+    position: absolute;
+    z-index: 1;
+    top:8vmax;
+    left:0%;
+      border: 1px solid black;
+   }
+   .route_links{
+    align-self:center;
+   }
+.nav_context{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  /* margin:rem; */
+  margin:2%;
+
+}
+.navlinks span:hover {
+  background-color: #fff7ad;
+}
+.support0{
+  display:none;
+}
+.navEss {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+.route_link {
+  align-self: center;
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1rem;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #0f6744;
+}
+.time{
+    grid-column: 1/3;
+
+}
+.location{
+    grid-column: 3/5;
+
+}
+.nav_context{
+   font-size: 2vw;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #0f6744;
+}
+/* .support1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  grid-column: 1/5;
+  border: 1px solid black;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.support1:hover {
+  background-color: #0f6744;
+  color: #f0f0e6;
+} */
+.message{
+  display: none;
+}
+.ham{
+  border:1px solid black;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+.nolinks {
+  display:none;
+}
+}
